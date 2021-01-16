@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.nav-list{
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 54px;
+    margin: 0%;
+    background-color: antiquewhite;
+}
+.home-main-container{
+    margin-top: 70px;
+}
