@@ -28,18 +28,14 @@ export function PostPreview({ post }) {
         <div className="bold"> {post.likes.length} likes</div>
         <div>  <Link className="post-view link" to={`/post/user/${post.by._id}`}>
             <span className="user-name bold">  {post.by.fullName}</span></Link>  {post.txt}</div>
-        <div> View all {post.comments.length} comments</div>
+        <button className="btn-post-preview-more-comments"> View all {post.comments.length} comments</button>
         <CommentsPreview comments={post.comments} />
-        <div className="hello">how much time ago was posted </div>
-        <button onClick={getElapsedTime}> get time</button>
-        <div>add comment</div>
-        <div className="post-preview-head post-preview-text">
-            <h1 className="post-preview-sent-to post-preview-text"></h1>
-            <h5 className="post-preview-subject post-preview-text"></h5>
-        </div>
+        <div className="post-preview-at">2 DAYS AGO </div>
+        {/* <button onClick={getElapsedTime}> get time</button> */} 
+      
 </section>
 <div className="new-comment">
-<input type="text" name="new-comment-input" placeholder="Write new comment"></input>
+<input type="text" name="new-comment-input" placeholder="Add a comment..."></input>
 <button className="btn-new-comment">Post</button>
 </div>
     </div>
