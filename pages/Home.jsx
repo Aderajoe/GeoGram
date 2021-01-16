@@ -31,9 +31,7 @@ export class Home extends React.Component {
     render() {
         if (this.state.user=== null) return <div>Loading.. home</div>;
 
-        return <div>
-
-         <section onLoad={onloadeddata} className="home-main-container">
+        return  <section onLoad={onloadeddata} className="home-main-container">
             {/* <button className="hello" onClick={this.onLoadData}>post list hi </button>
             <button className="hello" onClick={this.printStateToConsole}>print state</button>
         <button className="hello" onClick={this.loadPostListToPage}>load post list</button> */}
@@ -46,7 +44,7 @@ export class Home extends React.Component {
 
 
         </section>
-        </div>
+
     }
 }
 

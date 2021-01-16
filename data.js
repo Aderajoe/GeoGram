@@ -367,6 +367,21 @@ export const data = {
                     _id: 102,
                     imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
                     fullName: "Dana David"
+                },
+                {
+                    _id: 103,
+                    imgUrl: "https://images.pexels.com/photos/6408360/pexels-photo-6408360.jpeg?cs=srgb&dl=pexels-julia-volk-6408360.jpg&fm=jpg",
+                    fullname: "Avi Cohen"
+                },
+                {
+                    _id: 106,
+                    imgUrl: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
+                    fullName: "Makaveli"
+                },
+                {
+                    _id: 104,
+                    imgUrl: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?cs=srgb&dl=pexels-elle-hughes-1680172.jpg&fm=jpg",
+                    fullName: "Haim Meir"
                 }
             ],
             comments: [
