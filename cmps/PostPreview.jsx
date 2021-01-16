@@ -1,4 +1,5 @@
 import { CommentsPreview } from "../cmps/CommentsPreview.jsx"
+import { UserPreview } from "../cmps/userPreview.jsx"
 
 const { Link } = ReactRouterDOM;
 
@@ -17,10 +18,11 @@ export function PostPreview({ post }) {
 
     }
     return (<div className="post-preview-main-container">
+        <UserPreview user={post.by} />
 
         <Link className="post-view" to={`/post/${post._id}`}>
 
-            <img src={post.imgUrl} alt="Image not available" width="500" height="600"></img>
+            <img src={post.imgUrl} alt="Image not available" width="628" height="753"></img>
         </Link>
 <section className="post-preview-details">
 
@@ -28,7 +30,7 @@ export function PostPreview({ post }) {
         <div className="bold"> {post.likes.length} likes</div>
         <div>  <Link className="post-view link" to={`/post/user/${post.by._id}`}>
             <span className="user-name bold">  {post.by.fullName}</span></Link>  {post.txt}</div>
-        <button className="btn-post-preview-more-comments"> View all {post.comments.length} comments</button>
+        <Link className="post-preview-more-comments link" to={`/post/${post._id}`}> View all {post.comments.length} comments</Link>
         <CommentsPreview comments={post.comments} />
         <div className="post-preview-at">2 DAYS AGO </div>
         {/* <button onClick={getElapsedTime}> get time</button> */} 
