@@ -6,18 +6,19 @@ export function CommentsPreview({ comments }) {
     function lastCommentPreview(coments) {
         if (coments.length > 0) {
             return (
-                <div >  {comments[coments.length - 1].by.fullName} {comments[coments.length - 1].txt}</div>
-            )
+            
+                <div ><Link className="bold link" to={`/post/user/${comments[coments.length - 1].by._id}`}> 
+                {comments[coments.length - 1].by.fullName} </Link> {comments[coments.length - 1].txt}</div>
+           )
         }
-
     }
     function anotherLastCommentPreview(coments) {
         if (coments.length > 1) {
             return (
-                <div > {comments[coments.length - 2].by.fullName} {comments[coments.length - 2].txt}   </div>
+                <div > <Link className="bold link" to={`/post/user/${comments[coments.length - 2].by._id}`}> 
+                {comments[coments.length - 2].by.fullName} </Link> {comments[coments.length - 2].txt}   </div>
             )
         }
-
     }
 
     return (
