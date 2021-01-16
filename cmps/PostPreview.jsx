@@ -26,8 +26,11 @@ export function PostPreview({ post }) {
         </Link>
 <section className="post-preview-details">
 
-        <div>like and more options </div>
+        <div className="post-options"><img className="post-options-like" src="assets\imgs\new-heart.svg" width="25" height="25"></img>
+         <img className="post-options-comments" src="assets\imgs\comments.svg" width="25" height="25"></img>
+         <img className="post-options-save" src="assets\imgs\save.svg" width="25" height="25"></img></div>
         <div className="bold"> {post.likes.length} likes</div>
+    
         <div>  <Link className="post-view link" to={`/post/user/${post.by._id}`}>
             <span className="user-name bold">  {post.by.fullName}</span></Link>  {post.txt}</div>
         <Link className="post-preview-more-comments link" to={`/post/${post._id}`}> View all {post.comments.length} comments</Link>

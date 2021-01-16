@@ -96,6 +96,18 @@ font-size: 13px;
     height: 181px;
     justify-content: space-around;
 }
+.post-options{
+    display: flex;
+}
+.post-options-like{
+    margin-top: 1px;
+}
+.post-options-comments{
+    margin-left: 10px;
+}
+.post-options-save{
+    margin-left: 515px;
+}
 .post-preview-at{
     font-size: 10px;
     opacity: 0.67;
