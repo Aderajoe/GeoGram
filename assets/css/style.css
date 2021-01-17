@@ -172,3 +172,25 @@ font-weight: bolder;
     font-weight: bolder;
     border: none;
 }
+
+.post-view-main-container{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    width: 836px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    border-right: 1px solid rgb(220, 220, 220);
+    border-top: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
+
+
+}
+.post-details{
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+width: 335px;
+background-color: yellowgreen;
+}

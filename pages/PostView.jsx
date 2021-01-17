@@ -46,16 +46,21 @@ export class PostView extends React.Component {
         if (!this.state.post) return <div className="hello">Loading.. post</div>;
 
 
-        return (<div>
-            <section className="post-view">
-                <img src={this.state.post.imgUrl} alt="Image not available" width="500" height="600"></img>
-                {/* <Route path="/:userId" component={ProfileView} /> */}
+        return (<div className="post-view-main-container">
 
-                <div> user details</div>
+            <img src={this.state.post.imgUrl} alt="Image not available" width="500" height="600"></img>
+
+            <section className="post-details" >
+                <div className="post-details-user-details">
+                    <img className="img-user-preview" src={this.state.post.by.imgUrl} alt="Image not available" width="28" height="28"></img>
+
+                    <Link className=" link" to={`/post/user/${this.state.post.by._id}`}> {this.state.post.by.fullName}</Link>
+                </div>
                 <Link className="post-view" to={`user/${this.state.post.by._id}`}> click to see user</Link>
                 <div> coments view</div>
                 <div> likea and stuf</div>
                 <div> add comment</div>
+
 
 
             </section>
