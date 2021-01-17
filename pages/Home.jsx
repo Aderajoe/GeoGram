@@ -25,7 +25,6 @@ export class Home extends React.Component {
         var dataCopy = dataServices.loadData()
         this.setState({ users: dataCopy.users })
         this.setState({ posts: dataCopy.posts })
-        console.log(this.state)
 
 
     }

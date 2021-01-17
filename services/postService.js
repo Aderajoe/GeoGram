@@ -9,7 +9,6 @@ export const dataServices = {
 }
 
 function loadData() {
-    console.log('hello ade')
     return data
 
 
