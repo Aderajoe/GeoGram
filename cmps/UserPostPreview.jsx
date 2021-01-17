@@ -1,8 +1,18 @@
 
 const { Link } = ReactRouterDOM;
 
-export function UserPostPreview({ post }) {
-    if (!post.imgUrl) return <div className="hello">Loading.. picture</div>;
-        
-        return( <img src={post.imgUrl} alt="Image not available" width="500" height="600"></img>  )
+export function UserPostPreview({ user }) {
+  console.log("hello ade")
+  if (!user.imgUrls[0]) return <div className="hello">Loading.. picture</div>;
+
+  return (<div className="post-review-user-details">
+    <Link className="user-preview-img-ling link" to={`/post/user/${user._id}`}>
+      <img src={user.imgUrls[0]} className="users-img-preview" alt="Image not available" width="46" height="46"></img>
+    </Link>
+    <Link className="user-preview-name link" to={`/post/user/${user._id}`}>
+      {user.fullName}
+    </Link>
+    <button className="btn-follow">Follow</button>
+  </div>
+  )
 }
