@@ -9,10 +9,10 @@ export class PostPreview extends React.Component {
     // export function PostPreview({ post, userLogged }) {
 
     state = {
-        // users: this.props.users,
         post: this.props.post,
         userLogged: this.props.userLogged,
-        isLiked: "new-heart.svg"
+        isLiked: "new-heart.svg",
+        commentTxt: ""
     }
     componentDidMount() {
         this.getLike()
@@ -40,18 +40,12 @@ export class PostPreview extends React.Component {
 
     isLiked = (like) => {
         if (like._id === this.state.userLogged._id) {
-            // console.log("this works")
             return true
         } else {
-            // console.log("no like")
-
             return false
         }
     }
     addLike = () => {
-        console.log("i dont like this")
-        debugger
-
         if (this.state.isLiked === "new-heart.svg") {
             var postCopy = this.state.post
             var userDetails = {
@@ -67,7 +61,6 @@ export class PostPreview extends React.Component {
             console.log("i dont like this")
         } else {
             var postCopy = this.state.post
-
             var likes = postCopy.likes.map(like => {
                 if (like._id === 107) {
                     return false
@@ -76,33 +69,41 @@ export class PostPreview extends React.Component {
                 }
             });
             postCopy.likes = likes.filter(like => like)
-
             console.log(likes)
             this.setState({ post: postCopy })
-
             this.setState({ isLiked: "new-heart.svg" })
-
             console.log("i like this")
-
         }
     }
     getLike = () => {
         if (this.state.post.likes.length > 0) {
-            // console.log(this.state.userLogged._id)
             var isLike = this.state.post.likes.filter(this.isLiked)
-            // console.log(isLike)
             if (isLike.length > 0) {
                 return this.setState({ isLiked: "red-heart.svg" })
             }
         }
-        // else return(
-        //       this.setState({ isLiked: "new-heart.svg" }) )
-        //     if(this.state.userLogged._id===this.state.post.likes[0]._id){
-        //         this.setState({ isLiked: "red-heart.svg" })
-        //         console.log("this works")
-        //     }else{
-        //         this.setState({ isLiked: "new-heart.svg" })
-        //     }
+    }
+    onWriteComment = (ev) => {
+        var txtCopy = ev.target.value
+        this.setState({ commentTxt: txtCopy })
+    }
+    onAddComment = () => {
+        console.log(this.state.commentTxt)
+        var postCopy = this.state.post
+        var newTxt = this.state.commentTxt
+        var newComment ={
+            by: {
+                _id: 107,
+                imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
+                fullName: "Aderajoe Tsegay"
+            },
+            txt: newTxt,
+            at: 1610809226740
+        }
+        postCopy.comments.push(newComment)
+        console.log(postCopy)
+        this.setState({post: postCopy})
+
     }
 
 
@@ -121,6 +122,7 @@ export class PostPreview extends React.Component {
 
                         <img className="post-options-like" src={`/assets/imgs/${this.state.isLiked}`} width="25" height="25"></img>
                     </button>
+
                     <img className="post-options-comments" src="assets\imgs\comments.svg" width="25" height="25"></img>
                     <img className="post-options-save" src="assets\imgs\save.svg" width="25" height="25"></img>
                 </div>
@@ -133,8 +135,8 @@ export class PostPreview extends React.Component {
                 {/* <button onClick={this.getLike}> get time</button> */}
             </section>
             <div className="new-comment">
-                <input type="text" name="new-comment-input" placeholder="Add a comment..."></input>
-                <button className="btn-new-comment">Post</button>
+                <input onChange={this.onWriteComment} type="text" name="new-comment-input" placeholder="Add a comment..."></input>
+                <button className="btn-new-comment" onClick={this.onAddComment}>Post</button>
             </div>
         </div>
         )

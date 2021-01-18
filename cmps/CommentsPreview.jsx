@@ -24,8 +24,8 @@ export function CommentsPreview({ comments }) {
     return (
         <div  >
             <div>
-                {lastCommentPreview(comments)}
                 {anotherLastCommentPreview(comments)}
+                {lastCommentPreview(comments)}
             </div>
         </div>
     )
