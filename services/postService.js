@@ -5,7 +5,8 @@ export const dataServices = {
     loadData,
      getPostById,
      getUserById,
-     getPostsByUserId
+     getPostsByUserId,
+     getUserLogged
 }
 
 function loadData() {
@@ -34,4 +35,12 @@ function getUserById(userId) {
     userId = parseInt(userId)
     const user = data.users.find(user => user._id === userId);
     return Promise.resolve(user);
+}
+
+
+function getUserLogged() {
+    
+   
+    const userLogged = data.userLogged;
+    return Promise.resolve(userLogged);
 }

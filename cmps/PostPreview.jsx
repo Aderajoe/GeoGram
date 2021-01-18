@@ -5,7 +5,7 @@ import { dataServices } from "../services/postService.js"
 const { Link } = ReactRouterDOM;
 
 
-export function PostPreview({ post }) {
+export function PostPreview({ post, userLogged}) {
 
     function getElapsedTime() {
         console.log(post.at + "posted at")
@@ -15,22 +15,22 @@ export function PostPreview({ post }) {
         elapsedTime = elapsedTime / 1000
         console.log(elapsedTime)
     }
-function logInUser() {
-    // const { userId } = this.props.match.params;
-    // const { userId } 
-    var userId=5
-var user
-    var userCheck = []
-//    var userLogged= dataServices.getUserById(userId)
-    dataServices.getUserById(userId).then(user=userCheck)
+    function logInUser() {
+        // const { userId } = this.props.match.params;
+        // const { userId } 
+        var userId = 5
+        var user
+        var userCheck = []
+        //    var userLogged= dataServices.getUserById(userId)
+        dataServices.getUserById(userId).then(user = userCheck)
 
-    // debugger
-console.log(userCheck)
-    
-}
+        // debugger
+        // console.log(userCheck)
+
+    }
 
 
-logInUser()
+    // logInUser()
     return (<div className="post-preview-main-container">
         <UserPreview user={post.by} />
         <Link className="post-view" to={`/post/${post._id}`}>

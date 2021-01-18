@@ -9,13 +9,13 @@ const { Route, Switch } = ReactRouterDOM;
 
 
 
-export function PostList({ posts }) {
+export function PostList({ posts, userLogged }) {
     return (
         <section>
            {posts.map(post => {
                 if (!post) return <div>dont work</div>
                 return <div key={post._id}>
-                    <PostPreview post={post} />
+                    <PostPreview post={post} userLogged={userLogged} />
 
                 </div>
             })}

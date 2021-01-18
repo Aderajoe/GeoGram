@@ -643,7 +643,7 @@ export const data = {
                     by: {
                         _id: 103,
                         imgUrl: "https://images.pexels.com/photos/6408360/pexels-photo-6408360.jpeg?cs=srgb&dl=pexels-julia-volk-6408360.jpg&fm=jpg",
-                        fullname: "Avi Cohen"
+                        fullName: "Avi Cohen"
                     },
                     txt: "you do YOU",
                     at: 1610809226740
@@ -652,7 +652,7 @@ export const data = {
         },
         {
             _id: 205,
-            txt: "Nice say to spend at a the beach.",
+            txt: "Nice day to spend at a the beach.",
             imgUrl: "https://images.pexels.com/photos/4712039/pexels-photo-4712039.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4712039.jpg&fm=jpg",
             at: 1610719226740,
             tags: [
@@ -713,16 +713,56 @@ export const data = {
                     _id: 102,
                     imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
                     fullName: "Dana David"
+                },
+                {
+                    _id: 101,
+                    imgUrl: "https://images.pexels.com/photos/4119310/pexels-photo-4119310.jpeg?cs=srgb&dl=pexels-bruno-cervera-4119310.jpg&fm=jpg",
+                    fullName: "Noa Cohen"
                 }
             ],
             comments: [
                 {
                     by: {
-                        _id: 102,
-                        imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
-                        fullName: "Dana David"
+                        _id: 101,
+                        imgUrl: "https://images.pexels.com/photos/4119310/pexels-photo-4119310.jpeg?cs=srgb&dl=pexels-bruno-cervera-4119310.jpg&fm=jpg",
+                        fullName: "Noa Cohen"
                     },
-                    txt: "you are the best",
+                    txt: "Looks like a good place to surf",
+                    at: 1610809226740
+                },
+                {
+                    by: {
+                        _id: 101,
+                        imgUrl: "https://images.pexels.com/photos/4119310/pexels-photo-4119310.jpeg?cs=srgb&dl=pexels-bruno-cervera-4119310.jpg&fm=jpg",
+                        fullName: "Noa Cohen"
+                    },
+                    txt: "Looks like a good place to surf",
+                    at: 1610809226740
+                }, {
+                    by: {
+                        _id: 101,
+                        imgUrl: "https://images.pexels.com/photos/4119310/pexels-photo-4119310.jpeg?cs=srgb&dl=pexels-bruno-cervera-4119310.jpg&fm=jpg",
+                        fullName: "Noa Cohen"
+                    },
+                    txt: "Looks like a good place to surf",
+                    at: 1610809226740
+                },
+                {
+                    by: {
+                        _id: 103,
+                        imgUrl: "https://images.pexels.com/photos/6408360/pexels-photo-6408360.jpeg?cs=srgb&dl=pexels-julia-volk-6408360.jpg&fm=jpg",
+                        fullName: "Avi Cohen"
+                    },
+                    txt: "AMAZING!!!!",
+                    at: 1610809226740
+                },
+                {
+                    by: {
+                        _id: 101,
+                        imgUrl: "https://images.pexels.com/photos/4119310/pexels-photo-4119310.jpeg?cs=srgb&dl=pexels-bruno-cervera-4119310.jpg&fm=jpg",
+                        fullName: "Noa Cohen"
+                    },
+                    txt: "Looks like a good place to surf",
                     at: 1610809226740
                 }
             ]
@@ -831,7 +871,7 @@ export const data = {
         },
         {
             _id: 210,
-            txt: "Just anothe the at the office.",
+            txt: "Just another the at the office.",
             imgUrl: "https://images.pexels.com/photos/5087320/pexels-photo-5087320.jpeg?cs=srgb&dl=pexels-max-avans-5087320.jpg&fm=jpg",
             at: 1610719226740,
             tags: [
@@ -897,7 +937,70 @@ export const data = {
                 }
             ]
         }
-    ]
+    ],
+    userLogged:{
+        _id: 101,
+        fullName: "Aderajoe Tsegay",
+        city: "New-York",
+        age: 30,
+        email: "aderajoegeogram@gmail.com",
+        password: 123456,
+        imgUrls: [
+            "https://images.pexels.com/photos/4119310/pexels-photo-4119310.jpeg?cs=srgb&dl=pexels-bruno-cervera-4119310.jpg&fm=jpg"
+        ],
+        joinedAt: 1991274912523,
+        intrests: [
+            "Sunsets",
+            "Sunshine",
+            "Surfing",
+            "Gaming"
+        ],
+        following: [
+            {
+                _id: 102,
+                imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
+                fullName: "Dana David"
+            },
+            {
+                _id: 103,
+                imgUrl: "https://images.pexels.com/photos/6408360/pexels-photo-6408360.jpeg?cs=srgb&dl=pexels-julia-volk-6408360.jpg&fm=jpg",
+                fullName: "Avi Cohen"
+            },
+            {
+                _id: 106,
+                imgUrl: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
+                fullName: "Makaveli"
+            },
+            {
+                _id: 104,
+                imgUrl: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?cs=srgb&dl=pexels-elle-hughes-1680172.jpg&fm=jpg",
+                fullName: "Haim Meir"
+            }
+        ],
+        followedBy: [
+            {
+                _id: 102,
+                imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
+                fullName: "Dana David"
+            },
+            {
+                _id: 103,
+                imgUrl: "https://images.pexels.com/photos/6408360/pexels-photo-6408360.jpeg?cs=srgb&dl=pexels-julia-volk-6408360.jpg&fm=jpg",
+                fullName: "Avi Cohen"
+            },
+            {
+                _id: 106,
+                imgUrl: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
+                fullName: "Makaveli"
+            },
+            {
+                _id: 104,
+                imgUrl: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?cs=srgb&dl=pexels-elle-hughes-1680172.jpg&fm=jpg",
+                fullName: "Haim Meir"
+            }
+        ]
+    }
+    
 
 }
 // users: [
