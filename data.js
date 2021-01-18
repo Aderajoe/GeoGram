@@ -398,7 +398,7 @@ export const data = {
                         fullName: "Dana David"
                     },
                     txt: "Have a nice day my sister from another mother",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 },
                 {
                     by: {
@@ -407,7 +407,7 @@ export const data = {
                         fullName: "Haim Meir"
                     },
                     txt: "hello all",
-                    createdAt: 1610809226740
+                    at: 1610809226740
                 },
                 {
                     by: {
@@ -416,7 +416,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "good day my dear friend",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 },
                 {
                     by: {
@@ -425,7 +425,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "what a nice tree",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 },
                 {
                     by: {
@@ -434,7 +434,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "talk to me next time your in town",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 },
                 {
                     by: {
@@ -443,7 +443,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "we need a vacation, ASAP",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 }
             ]
         },
@@ -506,7 +506,7 @@ export const data = {
                         fullName: "Dana David"
                     },
                     txt: "See ya at school",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 },
                 {
                     by: {
@@ -515,7 +515,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "good day my dear friend",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 },
                 {
                     by: {
@@ -524,7 +524,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "what a nice tree",
-                    createdAt: 1610809256740
+                    a: 1610809256740
                 },
                 {
                     by: {
@@ -533,7 +533,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "talk to me next time your in town",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 },
                 {
                     by: {
@@ -542,7 +542,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "Incredible",
-                    createdAt: 1610809256740
+                    at: 1610809256740
                 },
                 {
                     by: {
@@ -551,7 +551,7 @@ export const data = {
                         fullName: "Haim Meir"
                     },
                     txt: "what is that?",
-                    createdAt: 1610809226740
+                    at: 1610809226740
                 }
             ]
         },

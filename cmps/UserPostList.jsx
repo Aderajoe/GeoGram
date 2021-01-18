@@ -20,11 +20,12 @@ export function UserPostList({ posts }) {
     {posts.map(post => {
                 if (!post) return <div>dont work</div>
                 return <div key={post._id}>
-                    {/* <UserPostPreview post={post} /> */}
-
+                    <UserPostPreview post={post} />
+{/* <button onClick={checkState}></button>
+<button onClick={console.log(post)}>check post at render</button>
+                    post list {post._id} */}
                 </div>
             })}
-            post list
         </section>
     )
 }

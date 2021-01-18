@@ -3,20 +3,21 @@ const { Link } = ReactRouterDOM;
 
 export function CommentsPreview({ comments }) {
 
-    function lastCommentPreview(coments) {
-        if (coments.length > 0) {
+    function getLastComment(comments) {
+        if (comments.length > 0) {
+            let comment = comments[comments.length - 1]
             return (
-            
-                <div ><Link className="bold link" to={`/post/user/${comments[coments.length - 1].by._id}`}> 
-                {comments[coments.length - 1].by.fullName} </Link> {comments[coments.length - 1].txt}</div>
-           )
+                <div ><Link className="bold link" to={`/post/user/${comment.by._id}`}>
+                    {comment.by.fullName} </Link> {comment.txt}</div>
+            )
         }
     }
-    function anotherLastCommentPreview(coments) {
-        if (coments.length > 1) {
+    function anotherLastCommentPreview(comments) {
+        if (comments.length > 1) {
+            let comment = comments[comments.length - 2]
             return (
-                <div > <Link className="bold link" to={`/post/user/${comments[coments.length - 2].by._id}`}> 
-                {comments[coments.length - 2].by.fullName} </Link> {comments[coments.length - 2].txt}   </div>
+                <div > <Link className="bold link" to={`/post/user/${comment.by._id}`}>
+                    {comment.by.fullName} </Link> {comment.txt}   </div>
             )
         }
     }
@@ -25,37 +26,8 @@ export function CommentsPreview({ comments }) {
         <div  >
             <div>
                 {anotherLastCommentPreview(comments)}
-                {lastCommentPreview(comments)}
+                {getLastComment(comments)}
             </div>
         </div>
     )
 }
-
-
-
-
-
-
-
-// export function CommentsPreview({ comments }) {
-//     // return (<section>
-//     //     {comments.map(comment => {
-//     //             if (!comment) return <div>dont work</div>
-//     //             return <div key={email.id}>
-//     //                 <EmailPreview email={email} />
-//     //             </div>
-//     //         })}
-
-
-
-//         // {
-//             comments.map(comments => {
-//             if (!comment) return <div>dont work</div>
-//             return <div></div>
-//              <div key={comment.txt}>
-//                 {/* <EmailPreview email={email} /> */}
-//             </div>
-//         })}
-//         </section>
-//     )
-// }
