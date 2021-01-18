@@ -106,7 +106,7 @@ font-size: 13px;
     margin-left: 10px;
 }
 .post-options-save{
-    margin-left: 515px;
+    margin-left: 498px;
 }
 .post-preview-at{
     font-size: 10px;
@@ -198,4 +198,15 @@ font-weight: bolder;
 justify-content: space-around;
 width: 335px;
 background-color: yellowgreen;
+}
+
+.btn-post-options-like{
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+
+.post-options-like{
+    fill: yellow;
 }

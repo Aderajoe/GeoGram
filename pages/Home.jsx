@@ -23,11 +23,11 @@ export class Home extends React.Component {
     }
 
     onLoadData = () => {
+        // console.log(this.state.userLogged)
         var dataCopy = dataServices.loadData()
         this.setState({ users: dataCopy.users })
         this.setState({ posts: dataCopy.posts })
         this.setState({ userLogged: dataCopy.userLogged })
-
 
 
     }
@@ -39,7 +39,7 @@ export class Home extends React.Component {
 
         return <section onLoad={onloadeddata} className="home-main-container">
             {/* <button className="hello" onClick={this.onLoadData}>post list hi </button>
-            <button className="hello" onClick={this.printStateToConsole}>print state</button>
+        <button className="hello" onClick={this.printStateToConsole}>print state</button>
         <button className="hello" onClick={this.loadPostListToPage}>load post list</button> */}
             {/* <div>{this.loadPostListToPage}</div> */}
             <PostList posts={this.state.posts} userLogged={this.state.userLogged} />

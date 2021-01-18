@@ -27,7 +27,11 @@ function getPostsByUserId(userId) {
     return Promise.resolve(posts);
 }
 
-
+// function checkIfPostLiked(userId) {
+//     userId = parseInt(postId)
+//     const post = data.posts.find(post => post._id === userId);
+//     return Promise.resolve(post);
+// }
 
 
 function getUserById(userId) {
@@ -44,3 +48,11 @@ function getUserLogged() {
     const userLogged = data.userLogged;
     return Promise.resolve(userLogged);
 }
+
+// function checkIfPostLiked(userId) {
+//     userId = parseInt(userId)
+//     const user = data.users.find(user => user._id === userId);
+//     const isLiked = user.find(user => user._id === userId);
+
+//     return Promise.resolve(user);
+// }

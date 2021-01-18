@@ -370,6 +370,11 @@ export const data = {
                     fullName: "Dana David"
                 },
                 {
+                    _id: 107,
+                    imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
+                    fullName: "Aderajoe Tsegay"
+                },
+                {
                     _id: 103,
                     imgUrl: "https://images.pexels.com/photos/6408360/pexels-photo-6408360.jpeg?cs=srgb&dl=pexels-julia-volk-6408360.jpg&fm=jpg",
                     fullname: "Avi Cohen"
@@ -458,6 +463,11 @@ export const data = {
                 fullName: "Makaveli"
             },
             likes: [
+                {
+                    _id: 107,
+                    imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
+                    fullName: "Aderajoe Tsegay"
+                },
                 {
                     _id: 102,
                     imgUrl: "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg",
@@ -939,7 +949,7 @@ export const data = {
         }
     ],
     userLogged:{
-        _id: 101,
+        _id: 107,
         fullName: "Aderajoe Tsegay",
         city: "New-York",
         age: 30,
