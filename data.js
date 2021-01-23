@@ -950,7 +950,7 @@ export const data = {
     ],
     userLogged:{
         _id: 107,
-        fullName: "Aderajoe Tsegay",
+        fullName: "Aderajoe Trump",
         city: "New-York",
         age: 30,
         email: "aderajoegeogram@gmail.com",

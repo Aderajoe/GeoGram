@@ -3,7 +3,6 @@ const { Link } = ReactRouterDOM;
 
 export function UserPostPreview({ post }) {
 
-  // console.log(post[0])
   if (!post._id) return <div className="hello">Loading.. picture</div>;
 
   return (<div >

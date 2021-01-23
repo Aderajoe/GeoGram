@@ -8,12 +8,11 @@ body{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 .main-container{
+    width: 616px;
 
     display: grid;
-    /* grid-template-columns:  1fr minmax(630px, 600px) 1fr; */
-    grid-template-columns:  1fr minmax(630px, 600px) 1fr;
-
-    /* justify-content: center; */
+    grid-template-columns:  1fr minmax(630px, 600px);
+    justify-content: center;
 }
 img{
     object-fit: cover;
@@ -29,15 +28,15 @@ img{
     margin: 0%;
     background-color: white;
     border: 1px solid rgb(220, 220, 220);
-    display: grid;
-    grid-template-columns:  1fr minmax(630px, 600px) 1fr;
-
 }
 
 .header-main-container{
-
-    grid-column: 2;
-
+    /* width: 616px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin-right: auto;
+    margin-left: auto;
+    align-items: center; */
 }
 
 
@@ -68,14 +67,13 @@ width: fit-content;
     /* width: 616px; */
     /* margin-right: auto;
     margin-left: auto; */
-    grid-column: 2;
 }
 
 .post-preview-main-container{
     background-color: white;
     border: 1px solid rgb(220, 220, 220);
     margin-bottom: 30px;
-    /* width: 616px; */
+    width: 616px;
     border-radius: 3px;
 }
 
@@ -119,7 +117,7 @@ width: 100%;
 
 .post-preview-details{
     margin-left: 15px;
-    /* width: 600px; */
+    width: 600px;
     font-size: 13px;
     opacity: 0.97;
     display: flex;
@@ -229,37 +227,21 @@ input[name=new-comment-input]:focus{
     border: none;
 }
 
-.post-view-page{
+.post-view-main-container{
     margin-top: 70px;
     display: flex;
     align-items: center;
-    width: 815px;
-    height: 600px;
+    width: 836px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: white;
     border-right: 1px solid rgb(220, 220, 220);
     border-top: 1px solid rgb(220, 220, 220);
     border-bottom: 1px solid rgb(220, 220, 220);
-    grid-column: 2;
 }
 .post-details{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 335px;
-}
-.post-view-page .post-img{
-    width: 480px;
-    height: 600px;
-}
-.post-view-page .post-details .user-details{
-height: 56px;
-    /* background-color: aqua; */
-    border-top:1px solid rgb(248, 248, 248);
-
-    border-bottom:1px solid rgb(248, 248, 248);
-}
-.post-view-page .post-details .new-comment{
-    background-color: aqua;
-    height: 56px;
-    border-top: 1px solid rgb(248, 248, 248);
 }

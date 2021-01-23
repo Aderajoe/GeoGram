@@ -1,4 +1,6 @@
+
 import { dataServices } from "../services/postService.js";
+import { CommentList } from "../cmps/CommentsList.jsx";
 
 const { Link } = ReactRouterDOM;
 
@@ -25,18 +27,18 @@ export class PostView extends React.Component {
     render() {
         if (!this.state.post) return <div className="hello">Loading.. post</div>;
 
-        return (<div className="post-view-main-container">
+        return (<div className="post-view-page">
 
-            <img src={this.state.post.imgUrl} alt="Image not available" width="500"></img>
+            <img src={this.state.post.imgUrl} className="post-img" alt="Image not available" width="500"></img>
             <section className="post-details" >
-                <div className="post-details-user-details">
+                <div className="user-details">
                     <img className="img-user-preview" src={this.state.post.by.imgUrl} alt="Image not available"></img>
                     <Link className=" link" to={`/post/user/${this.state.post.by._id}`}> {this.state.post.by.fullName}</Link>
                 </div>
-                <Link className="post-view" to={`user/${this.state.post.by._id}`}> click to watch profile</Link>
-                <div> comments view</div>
+                <Link className="user-link" to={`user/${this.state.post.by._id}`}> click to watch profile</Link>
+                <CommentList post={this.state.post}/>
                 <div> likes and stuf</div>
-                <div> add comment</div>
+                <div className="new-comment"> <input placeholder="Add a comment"></input></div>
             </section>
         </div>)
     }

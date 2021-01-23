@@ -7,19 +7,12 @@ body{
     background-color: rgb(248, 248, 248);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
-.main-container{
 
-    display: grid;
-    /* grid-template-columns:  1fr minmax(630px, 600px) 1fr; */
-    grid-template-columns:  1fr minmax(630px, 600px) 1fr;
-
-    /* justify-content: center; */
-}
 img{
     object-fit: cover;
 }
 
-.header{
+.nav-list{
     position: fixed;
     z-index: 1;
     top: 0px;
@@ -29,27 +22,10 @@ img{
     margin: 0%;
     background-color: white;
     border: 1px solid rgb(220, 220, 220);
-    display: grid;
-    grid-template-columns:  1fr minmax(630px, 600px) 1fr;
-
 }
-
-.header-main-container{
-
-    grid-column: 2;
-
-}
-
-
 
 ul.nav-list {
     list-style-type:none;
-    /* width: auto; */
-}
-
-input[name=search]:focus{
-z-index: 2;
-width: fit-content;
 }
 
 .header-link{
@@ -58,24 +34,22 @@ width: fit-content;
     font-family: 'Sofia', cursive;
     font-size: 25px;
     font-weight: 600;
-    display: inline;
 }
 
 .home-main-container{
     margin-top: 70px;
-    /* display: flex;
-    align-items: center; */
-    /* width: 616px; */
-    /* margin-right: auto;
-    margin-left: auto; */
-    grid-column: 2;
+    display: flex;
+    align-items: center;
+    width: 630px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .post-preview-main-container{
     background-color: white;
     border: 1px solid rgb(220, 220, 220);
     margin-bottom: 30px;
-    /* width: 616px; */
+    width: 616px;
     border-radius: 3px;
 }
 
@@ -91,9 +65,8 @@ width: fit-content;
 .post-review-user-details{
     height: 60px;
     display: flex;
-    width: 100%;
-    padding-left: 15px;
-    border-bottom: 1px solid  rgb(240, 240, 240);
+    width: 300px;
+    margin-left: 15px;
 }
 
 .img-user-preview{
@@ -105,7 +78,7 @@ width: fit-content;
 }
 
 .post-img{
-width: 100%;
+width: 614px;
 }
 
 .user-preview-name{
@@ -119,7 +92,7 @@ width: 100%;
 
 .post-preview-details{
     margin-left: 15px;
-    /* width: 600px; */
+    width: 600px;
     font-size: 13px;
     opacity: 0.97;
     display: flex;
@@ -132,9 +105,6 @@ width: 100%;
     background-color: white;
     border: none;
     outline: none;
-    /* width: 25px;
-    height: 25px; */
-    padding: 0px;
 }
 
 .post-options{
@@ -142,17 +112,15 @@ width: 100%;
 }
 
 .post-options-like{
-    /* margin-top: 1px; */
+    margin-top: 1px;
     width: 25px;
     height: 25px;
 }
 
 .post-options-comments{
     margin-left: 10px;
-    /* padding-top: 1px; */
-    width: 23px;
-    margin-top: 1px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
 }
 
 .post-options-save{
@@ -178,7 +146,7 @@ width: 100%;
 input[name=new-comment-input]{
     border: none;
     width: 540px;
-    margin-left: 14px;
+    margin-left: 15px;
     margin-top: 20px;
     opacity: 0.7;
     font-weight: 500;
@@ -186,11 +154,12 @@ input[name=new-comment-input]{
 
 input[name=new-comment-input]:focus{
     outline: none;
+
 }
 
 .btn-new-comment{
     background-color: white;
-    margin-left: 3px;
+    margin-left: 15px;
     color: rgb(28, 156, 173);
     font-weight: bolder;
     border: none;
@@ -229,37 +198,21 @@ input[name=new-comment-input]:focus{
     border: none;
 }
 
-.post-view-page{
+.post-view-main-container{
     margin-top: 70px;
     display: flex;
     align-items: center;
-    width: 815px;
-    height: 600px;
+    width: 836px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: white;
     border-right: 1px solid rgb(220, 220, 220);
     border-top: 1px solid rgb(220, 220, 220);
     border-bottom: 1px solid rgb(220, 220, 220);
-    grid-column: 2;
 }
 .post-details{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 335px;
-}
-.post-view-page .post-img{
-    width: 480px;
-    height: 600px;
-}
-.post-view-page .post-details .user-details{
-height: 56px;
-    /* background-color: aqua; */
-    border-top:1px solid rgb(248, 248, 248);
-
-    border-bottom:1px solid rgb(248, 248, 248);
-}
-.post-view-page .post-details .new-comment{
-    background-color: aqua;
-    height: 56px;
-    border-top: 1px solid rgb(248, 248, 248);
 }

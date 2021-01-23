@@ -17,11 +17,7 @@ export class PostPreview extends React.Component {
     }
 
     isLiked = (like) => {
-        if (like._id === this.state.userLogged._id) {
-            return true
-        } else {
-            return false
-        }
+        return (like._id === this.state.userLogged._id)
     }
     onLike = () => {
         let postCopy = this.state.post
@@ -36,7 +32,7 @@ export class PostPreview extends React.Component {
             this.setState({ isLiked: "red-heart.svg" })
         } else {
             let likes = postCopy.likes.map(like => {
-                if (like._id === 107) {
+                if (like._id === this.state.userLogged._id) {
                     return false
                 } else {
                     return like
