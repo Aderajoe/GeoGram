@@ -10,23 +10,21 @@ const { Link } = ReactRouterDOM;
 
 
 
-export function CommentList({  post }) {
+export function CommentList({ post }) {
     return (
-        <section>
-           {post.comments.map(comment => {
+        <section className="comments">
+            <div className="full-comment" ><img className="img-user" src={post.by.imgUrl} alt="Image not available"></img>
+                        <div className="name-txt"><Link className="bold link" to={`/post/user/${post.by._id}`}>
+                            {post.by.fullName} </Link> {post.txt} </div></div>
+                
+            {post.comments.map(comment => {
                 if (!post) return <div>dont work</div>
-                return <div key={post.at} >
-<div ><Link className="bold link" to={`/post/user/${comment.by._id}`}>
-                    {comment.by.fullName} </Link> {comment.txt}</div>                    aderajoe
-                    {/* {post.comments[0].txt} */}
-                    {/* <EmailPreview email={email} /> */}
-                    {/* <CommentView comment={comment} /> */}
-
+                return <div key={post.at} className="full-comment">
+                    <img className="img-user" src={comment.by.imgUrl} alt="Image not available"></img>
+                      <div className="name-txt">  <Link className="bold link" to={`/post/user/${comment.by._id}`}>
+                            {comment.by.fullName} </Link> {comment.txt}</div>
                 </div>
             })}
-            {/* {posts[0]._id} */}
-            {/* this works */}
-            
         </section>
     )
 }

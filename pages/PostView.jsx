@@ -31,14 +31,24 @@ export class PostView extends React.Component {
 
             <img src={this.state.post.imgUrl} className="post-img" alt="Image not available" width="500"></img>
             <section className="post-details" >
+                {/* <Link className="user-link" to={`user/${this.state.post.by._id}`}> click to watch profile</Link> */}
                 <div className="user-details">
-                    <img className="img-user-preview" src={this.state.post.by.imgUrl} alt="Image not available"></img>
+                    <img className="img-user" src={this.state.post.by.imgUrl} alt="Image not available"></img>
                     <Link className=" link" to={`/post/user/${this.state.post.by._id}`}> {this.state.post.by.fullName}</Link>
                 </div>
-                <Link className="user-link" to={`user/${this.state.post.by._id}`}> click to watch profile</Link>
-                <CommentList post={this.state.post}/>
-                <div> likes and stuf</div>
-                <div className="new-comment"> <input placeholder="Add a comment"></input></div>
+                <CommentList post={this.state.post} />
+                <div className="options">
+                    <div className="btn">
+                    <img className="like" src={`/assets/imgs/heart.svg`} ></img>
+                    <img className="comment" src="assets\imgs\comments.svg"></img>
+                    <div className="space"></div>
+                    <img className="save" src="assets\imgs\save.svg"></img>
+                    </div>
+                    <div className="bold"> {this.state.post.likes.length} likes</div>
+                    <div className="posted-at">2 DAYS AGO</div>
+                </div>
+                <div className="new-comment"> <input type="text" name="new-comment" placeholder="Add a comment"></input>
+                    <button className="btn-new-comment">Post</button></div>
             </section>
         </div>)
     }

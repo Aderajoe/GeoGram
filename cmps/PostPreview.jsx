@@ -93,7 +93,7 @@ export class PostPreview extends React.Component {
                         <span className="bold">  {this.state.post.by.fullName}</span></Link>  {this.state.post.txt}</div>
                 <Link className="post-preview-more-comments link" to={`/post/${this.state.post._id}`}> View all {this.state.post.comments.length} comments</Link>
                 <CommentsPreview comments={this.state.post.comments} />
-                <div className="post-preview-at">2 DAYS AGO </div>
+                <div className="posted-at">2 DAYS AGO </div>
             </section>
             <div className="new-comment">
                 <input onChange={this.onWriteComment} type="text" name="new-comment-input" placeholder="Add a comment..."></input>

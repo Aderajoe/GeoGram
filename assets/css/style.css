@@ -100,8 +100,8 @@ width: fit-content;
     border-radius: 50%;
     border: 2px solid palevioletred;
     margin-top: 7px;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
 }
 
 .post-img{
@@ -161,7 +161,7 @@ width: 100%;
     height: 25px;
 }
 
-.post-preview-at{
+.posted-at{
     font-size: 10px;
     opacity: 0.67;
 }
@@ -236,30 +236,148 @@ input[name=new-comment-input]:focus{
     width: 815px;
     height: 600px;
     background-color: white;
-    border-right: 1px solid rgb(220, 220, 220);
-    border-top: 1px solid rgb(220, 220, 220);
-    border-bottom: 1px solid rgb(220, 220, 220);
+    border-radius: 3px;
+ 
+    border: 1px solid rgb(220, 220, 220);
     grid-column: 2;
 }
 .post-details{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around; */
     width: 335px;
+    height: 100%;
+    /* display: grid; */
+    /* grid-template-columns:  1fr minmax(290px, 250px) 2fr;
+    grid-template-rows: auto; */
+    /* padding-left: 15px; */
+
+    /* row-gap: 1px; */
+    /* background-color: brown; */
+    font-size: 13px;
+    
+
 }
 .post-view-page .post-img{
     width: 480px;
-    height: 600px;
+    height: 100%;
 }
 .post-view-page .post-details .user-details{
-height: 56px;
+    height: 72px;
     /* background-color: aqua; */
-    border-top:1px solid rgb(248, 248, 248);
-
+    /* border-top:1px solid rgb(128, 13, 13); */
+    display: flex;
     border-bottom:1px solid rgb(248, 248, 248);
+    grid-column: 2;
+    /* background-color: white; */
+    padding-left: 15px;
+    /* padding-top: 15px; */
+    /* justify-items: center; */
+    align-items: center;
+    
 }
+.post-view-page .post-details .user-details .link{
+    /* background-color: yellowgreen; */
+    padding-left: 15px;
+}
+
+.post-view-page .post-details .img-user{
+
+    border-radius: 50%;
+    /* border: 2px solid palevioletred; */
+    /* margin-top: 7px; */
+    width: 40px;
+    height: 40px;
+}
+
 .post-view-page .post-details .new-comment{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 56px;
     border-top: 1px solid rgb(248, 248, 248);
+    grid-column: 2;
+
+}
+
+.post-view-page .post-details .options{
+    /* background-color: aqua; */
+    height: 100px;
+    /* grid-column: 2; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(248, 248, 248);
+    border-top: 1px solid rgb(248, 248, 248);
+    padding-left: 15px;
+}
+.post-view-page .post-details .options .btn{
+    padding-right: 15px;
+    padding-top: 10px;
+    display: flex;
+}
+
+
+.post-view-page .post-details .options .btn img{
+    width: 25px;
+    height: 25px;
+}
+.post-view-page .post-details .options .btn .space{
+    flex-grow: 1;
+}
+
+.post-view-page .post-details .options .btn .comment{
+    /* flex-grow: 1; */
+    margin-left: 10px;
+    /* padding-top: 1px; */
+    width: 21px;
+    margin-top: 2px;
+    height: 21px;
+}
+.post-view-page .post-details .options .posted-at{
+    padding-bottom: 10px;
+}
+
+.post-view-page .post-details .comments{
+    height: 370px;
+    overflow-y:auto;
+    padding-top: 15px;
+    -ms-overflow-style: none;  /* Hides scroll bar for IE and Edge */
+    scrollbar-width: none;     /* Hides scroll bar for Firefox */
+}
+.post-view-page .post-details .comments::-webkit-scrollbar{
+    display: none;
+}
+
+.post-view-page .post-details .comments .full-comment{
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 30px;
+    height: 72px;
+}
+.post-view-page .post-details .comments .full-comment .name-txt{
+    padding-left: 15px;
+}
+
+.post-view-page .post-details .new-comment{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 14px;
+    padding-right: 15px;
+
+}
+.post-view-page .post-details .new-comment input[name=new-comment]{
+    /* margin-left: 14px; */
+border: none;
+/* width: 200px; */
+flex-grow: 1;
+}
+.post-view-page .post-details .new-comment .btn-new-comment{
+    padding-right: 0px;
+}
+
+
+.post-view-page .post-details .new-comment input[name=new-comment]:focus{
+    outline: none;
 }
