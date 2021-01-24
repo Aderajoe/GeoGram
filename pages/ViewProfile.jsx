@@ -48,9 +48,9 @@ export class ProfileView extends React.Component {
                             <div className="options"></div>
                         </div>
                         <div className="meta-data">
-                            <div> <span className="bold">{this.state.posts.length}</span> posts</div>
-                            <div> <span className="bold">{this.state.user.followedBy.length}</span> followers</div>
-                            <div> <span className="bold">{this.state.user.following.length}</span> following</div>
+                            <div className="info"> <span className="bold">{this.state.posts.length}</span> posts</div>
+                            <div className="info"> <span className="bold">{this.state.user.followedBy.length}</span> followers</div>
+                            <div className="info"> <span className="bold">{this.state.user.following.length}</span> following</div>
                         </div>
                         <div className="details">
                             <div className="name">{this.state.user.fullName}</div>

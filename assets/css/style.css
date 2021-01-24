@@ -15,9 +15,7 @@ body{
 
     /* justify-content: center; */
 }
-.post-view{
-    background-color: yellowgreen;
-}
+
 img{
     object-fit: cover;
 }
@@ -466,24 +464,39 @@ flex-grow: 1;
 
 .user-view .card .card-header{
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .user-view .card .main .meta-data{
     display: flex;
     margin-bottom: 20px;
 }
+.user-view .card .main .meta-data .info{
+    margin-right: 52px;
+}
+
 .user-view .card .main{
     grid-column: 2 / 4;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    justify-items: space-around;
 }
+.user-view .card .details{
+    margin-bottom: 50px;
+}
+.user-view .card .details .name{
+    font-weight: 500;
+}
+
 
 
 .user-view .card .footer{
     display: flex;
     /* flex-direction: column; */
-    background-color: blue;
+    /* background-color: blue; */
     margin-bottom: 20px;
+    /* height: 70px; */
 }
 
 .user-view .card .footer .followers-list{
