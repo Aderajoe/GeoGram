@@ -7,13 +7,16 @@ body{
     background-color: rgb(248, 248, 248);
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
-.main-container{
+.home-main-container{
 
     display: grid;
     /* grid-template-columns:  1fr minmax(630px, 600px) 1fr; */
     grid-template-columns:  1fr minmax(630px, 600px) 1fr;
 
     /* justify-content: center; */
+}
+.post-view{
+    background-color: yellowgreen;
 }
 img{
     object-fit: cover;
@@ -68,6 +71,12 @@ width: fit-content;
     /* width: 616px; */
     /* margin-right: auto;
     margin-left: auto; */
+    grid-column: 2;
+    display: grid;
+    grid-template-columns:  1fr minmax(630px, 600px) 1fr;
+
+}
+.home-main-container .post-list{
     grid-column: 2;
 }
 
@@ -229,7 +238,25 @@ input[name=new-comment-input]:focus{
     border: none;
 }
 
+
+/* post view page ////////////////////////////////////////////////// */
+
+
 .post-view-page{
+    /* margin-top: 70px;
+    display: flex;
+    align-items: center;
+    width: 815px;
+    height: 600px;
+    background-color: white;
+    border-radius: 3px;
+ 
+    border: 1px solid rgb(220, 220, 220);
+    grid-column: 2; */
+    display: grid;
+    grid-template-columns:  1fr minmax(815px, 600px) 1fr;
+}
+.post-view-page .post-view{
     margin-top: 70px;
     display: flex;
     align-items: center;
@@ -240,7 +267,17 @@ input[name=new-comment-input]:focus{
  
     border: 1px solid rgb(220, 220, 220);
     grid-column: 2;
+    display: grid;
+    grid-template-columns:  1fr minmax(630px, 600px) 1fr;
 }
+
+.post-view .header{
+    grid-template-columns:  1fr minmax(815px, 600px) 1fr;
+
+}
+
+
+
 .post-details{
     /* display: flex;
     flex-direction: column;
@@ -255,6 +292,8 @@ input[name=new-comment-input]:focus{
     /* row-gap: 1px; */
     /* background-color: brown; */
     font-size: 13px;
+
+
     
 
 }
@@ -381,3 +420,59 @@ flex-grow: 1;
 .post-view-page .post-details .new-comment input[name=new-comment]:focus{
     outline: none;
 }
+
+
+/* view user details page ///////////////////////////////////////////////////////////// */
+
+.view-profile-page{
+    display: grid;
+    grid-template-columns:  1fr minmax(935px, 600px) 1fr;
+}
+.view-profile-page .header{
+    grid-template-columns:  1fr minmax(935px, 600px) 1fr;
+}
+
+.user-view{
+    margin-top: 54px;
+    grid-column: 2;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.user-view .card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+.user-view .card{
+    display: flex;
+    background-color: aqua;
+    height: 273px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
+.user-view .card .user-img{
+    background-color: black;
+    /* grid-column: 2; */
+    /* justify-content: center; */
+    justify-self: center;
+    align-self:center ;
+}
+.user-view .card .main .meta-data{
+    display: flex;
+}
+
+.view-profile-page .post-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.view-profile-page .post-list img{
+    width: 281px;
+    height: 281px;
+}
+

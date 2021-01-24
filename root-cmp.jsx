@@ -12,12 +12,12 @@ export class App extends React.Component {
     render() {
         return (
             <Router>
-                <section className="app main-container">
-                    <AppHeader />
+                <section className="app">
+                    {/* <AppHeader /> */}
                     <Switch>
                         {/* <Route path="/newPost" component={NewPost} /> */}
                         <Route path="/post/user/:userId" component={ProfileView} />
-                        <Route path="/post/:postId" component={PostView} />
+                        <Route path="/post/:postId" component={PostView} className="post-view" />
                         <Route path="/" component={Home}/>
                     </Switch>
                 </section>

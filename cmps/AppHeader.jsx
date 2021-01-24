@@ -1,6 +1,6 @@
 const { NavLink } = ReactRouterDOM;
 
-export function AppHeader(props) {
+export function AppHeader(page) {
 
     return  <div className="header">
 
