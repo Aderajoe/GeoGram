@@ -442,18 +442,19 @@ flex-grow: 1;
 
 }
 .user-view .card img{
-    width: 150px;
-    height: 150px;
+    width: 221px;
+    height: 221px;
     border-radius: 50%;
 }
 
 
 .user-view .card{
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 273px;
     grid-template-columns: repeat(3, 1fr);
     display: grid;
+    border-bottom:1px solid rgb(220, 220, 220) ;
 }
 .user-view .card .user-img{
     background-color: black;
@@ -462,17 +463,44 @@ flex-grow: 1;
     justify-self: center;
     align-self:center ;
 }
-.user-view .card .main .meta-data{
-    display: flex;
+
+.user-view .card .card-header{
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
+.user-view .card .main .meta-data{
+    display: flex;
+    margin-bottom: 20px;
+}
+.user-view .card .main{
+    grid-column: 2 / 4;
+    background-color: blueviolet;
+}
+
+
+.user-view .card .footer{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+.user-view .card .footer .followers-list{
+    display: flex;
+    width: auto;
+}
+
+
 .view-profile-page .post-list{
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
+    column-gap: 15px;
+    row-gap: 15px;
 }
 .view-profile-page .post-list img{
-    width: 281px;
-    height: 281px;
+    width: 291px;
+    height: 291px;
 }
 

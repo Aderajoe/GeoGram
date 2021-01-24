@@ -16,8 +16,8 @@ export class App extends React.Component {
                     {/* <AppHeader /> */}
                     <Switch>
                         {/* <Route path="/newPost" component={NewPost} /> */}
-                        <Route path="/post/user/:userId" component={ProfileView} />
-                        <Route path="/post/:postId" component={PostView} className="post-view" />
+                        <Route path="/post/user/:userId" component={ProfileView} exact/>
+                        <Route path="/post/:postId" component={PostView} exact />
                         <Route path="/" component={Home}/>
                     </Switch>
                 </section>

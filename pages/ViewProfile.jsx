@@ -1,6 +1,6 @@
 import { dataServices } from "../services/postService.js";
 import { UserPostList } from "../cmps/UserPostList.jsx"
-import { AppHeader } from './cmps/AppHeader.jsx'
+import { AppHeader } from '../cmps/AppHeader.jsx'
 import { FollowedBy } from '../cmps/FollowedBy.jsx'
 
 const Router = ReactRouterDOM.HashRouter;
@@ -57,8 +57,8 @@ export class ProfileView extends React.Component {
                             <div className="location">{this.state.user.city}</div>
                         </div>
 
-                        <FollowedBy user={this.state.page} />
-                        <div className="footer"></div>
+                        
+                        <div className="footer">Followed by<FollowedBy user={this.state.user} /></div>
                     </div>
                     {/* <button onClick={this.onBack}>go back</button> */}
                 </div>

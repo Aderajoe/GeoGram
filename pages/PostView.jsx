@@ -1,4 +1,4 @@
-import { AppHeader } from './cmps/AppHeader.jsx'
+import { AppHeader } from '../cmps/AppHeader.jsx'
 
 import { dataServices } from "../services/postService.js";
 import { CommentList } from "../cmps/CommentsList.jsx";

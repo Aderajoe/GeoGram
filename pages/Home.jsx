@@ -1,12 +1,12 @@
 import { PostList } from "../cmps/PostList.jsx"
 import { UserList } from "../cmps/UserList.jsx"
 import { dataServices } from "../services/postService.js"
-import { AppHeader } from './cmps/AppHeader.jsx'
+import { AppHeader } from '../cmps/AppHeader.jsx'
 
 export class Home extends React.Component {
 
     state = {
-        page:"home",
+        page: "home",
         users: [],
         posts: [],
         userLogged: {}
@@ -16,6 +16,9 @@ export class Home extends React.Component {
         this.onLoadData()
     }
 
+    removePost = (id) => {
+        dataServices.removePost(id)
+    }
     onLoadData = () => {
         var dataCopy = dataServices.loadData()
         this.setState({ users: dataCopy.users })
@@ -28,7 +31,7 @@ export class Home extends React.Component {
 
         return <section className="home-main-container">
             <AppHeader page={this.state.page} />
-            <PostList posts={this.state.posts} userLogged={this.state.userLogged} />
+            <PostList posts={this.state.posts} userLogged={this.state.userLogged} onRemove={this.removePost} />
             {/* <UserList users={this.state.users} /> */}
         </section>
 

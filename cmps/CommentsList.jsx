@@ -19,7 +19,7 @@ export function CommentList({ post }) {
                 
             {post.comments.map(comment => {
                 if (!post) return <div>dont work</div>
-                return <div key={post.at} className="full-comment">
+                return <div key={comment.at} className="full-comment">
                     <img className="img-user" src={comment.by.imgUrl} alt="Image not available"></img>
                       <div className="name-txt">  <Link className="bold link" to={`/post/user/${comment.by._id}`}>
                             {comment.by.fullName} </Link> {comment.txt}</div>

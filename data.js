@@ -11,7 +11,7 @@ export const data = {
             imgUrls: [
                 "https://images.pexels.com/photos/4119310/pexels-photo-4119310.jpeg?cs=srgb&dl=pexels-bruno-cervera-4119310.jpg&fm=jpg"
             ],
-            joinedAt: 1991274912523,
+            joinedAt: 1991274612523,
             intrests: [
                 "Sunsets",
                 "Sunshine",
@@ -73,7 +73,7 @@ export const data = {
             imgUrls: [
                 "https://images.pexels.com/photos/3049285/pexels-photo-3049285.jpeg?cs=srgb&dl=pexels-jack-redgate-3049285.jpg&fm=jpg"
             ],
-            joinedAt: 1991174012523,
+            joinedAt: 1991173012523,
             intrests: [
                 "Sunsets",
                 "Rainy days",
@@ -134,7 +134,7 @@ export const data = {
             imgUrls: [
                 "https://images.pexels.com/photos/6408360/pexels-photo-6408360.jpeg?cs=srgb&dl=pexels-julia-volk-6408360.jpg&fm=jpg"
             ],
-            joinedAt: 1991274912523,
+            joinedAt: 1991274912553,
             intrests: [
                 "Sunsets",
                 "Sunshine",
@@ -195,7 +195,7 @@ export const data = {
             imgUrls: [
                 "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?cs=srgb&dl=pexels-elle-hughes-1680172.jpg&fm=jpg"
             ],
-            joinedAt: 1991274912523,
+            joinedAt: 1991274912423,
             intrests: [
                 "Sunsets",
                 "Sunshine",
@@ -247,7 +247,7 @@ export const data = {
             imgUrls: [
                 "https://images.pexels.com/photos/936019/pexels-photo-936019.jpeg?cs=srgb&dl=pexels-nappy-936019.jpg&fm=jpg"
             ],
-            joinedAt: 1991174012523,
+            joinedAt: 1991174012323,
             intrests: [
                 "Sunsets",
                 "Rainy days",
@@ -304,7 +304,7 @@ export const data = {
             imgUrls: [
                 "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
             ],
-            joinedAt: 1991274912523,
+            joinedAt: 1991274902523,
             intrests: [
                 "hipHop",
                 "Sunshine",
@@ -352,7 +352,7 @@ export const data = {
             _id: 201,
             txt: "Nothing is better than the simple things in life.",
             imgUrl: "https://images.pexels.com/photos/3560451/pexels-photo-3560451.jpeg?cs=srgb&dl=pexels-matt-hardy-3560451.jpg&fm=jpg",
-            at: 1610419226740,
+            at: 1610419226741,
             tags: [
                 "Flowers",
                 "Sunshine",
@@ -407,7 +407,7 @@ export const data = {
                         fullName: "Haim Meir"
                     },
                     txt: "hello all",
-                    at: 1610809226740
+                    at: 1610809226742
                 },
                 {
                     by: {
@@ -416,7 +416,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "good day my dear friend",
-                    at: 1610809256740
+                    at: 1610809256743
                 },
                 {
                     by: {
@@ -425,7 +425,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "what a nice tree",
-                    at: 1610809256740
+                    at: 1610809256744
                 },
                 {
                     by: {
@@ -434,7 +434,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "talk to me next time your in town",
-                    at: 1610809256740
+                    at: 1610809256745
                 },
                 {
                     by: {
@@ -443,7 +443,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "we need a vacation, ASAP",
-                    at: 1610809256740
+                    at: 1610809256746
                 }
             ]
         },
@@ -451,7 +451,7 @@ export const data = {
             _id: 202,
             txt: "We live in a magical world.",
             imgUrl: "https://images.pexels.com/photos/5277697/pexels-photo-5277697.jpeg?cs=srgb&dl=pexels-daniel-torobekov-5277697.jpg&fm=jpg",
-            at: 1610719226740,
+            at: 1610719226730,
             tags: [
                 "Flowers",
                 "Sunshine",
@@ -506,7 +506,7 @@ export const data = {
                         fullName: "Dana David"
                     },
                     txt: "See ya at school",
-                    at: 1610809256740
+                    at: 1610809256741
                 },
                 {
                     by: {
@@ -515,7 +515,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "good day my dear friend",
-                    at: 1610809256740
+                    at: 1610809256742
                 },
                 {
                     by: {
@@ -524,7 +524,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "what a nice tree",
-                    a: 1610809256740
+                    a: 1610809256743
                 },
                 {
                     by: {
@@ -533,7 +533,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "talk to me next time your in town",
-                    at: 1610809256740
+                    at: 1610809256744
                 },
                 {
                     by: {
@@ -542,7 +542,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "Incredible",
-                    at: 1610809256740
+                    at: 1610809256745
                 },
                 {
                     by: {
@@ -551,7 +551,7 @@ export const data = {
                         fullName: "Haim Meir"
                     },
                     txt: "what is that?",
-                    at: 1610809226740
+                    at: 1610809226746
                 }
             ]
         },
@@ -604,7 +604,7 @@ export const data = {
                         fullName: "Dana David"
                     },
                     txt: "who dis?",
-                    at: 1610809226740
+                    at: 1610809226741
                 }, {
                     by: {
                         _id: 106,
@@ -612,7 +612,7 @@ export const data = {
                         fullName: "Makaveli"
                     },
                     txt: "this shit is DOPE!!",
-                    at: 1610809226740
+                    at: 1610809226742
                 }
 
             ]
@@ -656,7 +656,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "you do YOU",
-                    at: 1610809226740
+                    at: 1610809226741
                 }
             ]
         },
@@ -699,7 +699,7 @@ export const data = {
                         fullName: "Jake David"
                     },
                     txt: "Only idiots spend time at the beach",
-                    at: 1610809226740
+                    at: 1610809226741
                 }
             ]
         },
@@ -747,7 +747,7 @@ export const data = {
                         fullName: "Noa Cohen"
                     },
                     txt: "Looks like a good place to surf",
-                    at: 1610809226740
+                    at: 1610809226741
                 }, {
                     by: {
                         _id: 101,
@@ -755,7 +755,7 @@ export const data = {
                         fullName: "Noa Cohen"
                     },
                     txt: "Looks like a good place to surf",
-                    at: 1610809226740
+                    at: 1610809226742
                 },
                 {
                     by: {
@@ -764,7 +764,7 @@ export const data = {
                         fullName: "Avi Cohen"
                     },
                     txt: "AMAZING!!!!",
-                    at: 1610809226740
+                    at: 1610809226743
                 },
                 {
                     by: {
@@ -773,7 +773,7 @@ export const data = {
                         fullName: "Noa Cohen"
                     },
                     txt: "Looks like a good place to surf",
-                    at: 1610809226740
+                    at: 1610809226744
                 }
             ]
         },
@@ -948,7 +948,7 @@ export const data = {
             ]
         }
     ],
-    userLogged:{
+    userLogged: {
         _id: 107,
         fullName: "Aderajoe Trump",
         city: "New-York",
@@ -1010,7 +1010,7 @@ export const data = {
             }
         ]
     }
-    
+
 
 }
 // users: [
