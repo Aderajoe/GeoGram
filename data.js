@@ -1,5 +1,5 @@
 
-export const data = {
+export var data = {
     users: [
         {
             _id: 101,

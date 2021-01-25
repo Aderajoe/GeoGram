@@ -14,16 +14,22 @@ export class Home extends React.Component {
 
     componentDidMount() {
         this.onLoadData()
+
     }
 
-    removePost = (id) => {
+    onRemovePost = (id) => {
         dataServices.removePost(id)
+        // this.onLoadData()
+        let postsCopy = this.state.posts.filter(post => (post._id != id))
+        this.setState({ posts: postsCopy })
+
     }
     onLoadData = () => {
         var dataCopy = dataServices.loadData()
         this.setState({ users: dataCopy.users })
         this.setState({ posts: dataCopy.posts })
         this.setState({ userLogged: dataCopy.userLogged })
+        console.log('state after load ' + this.state.posts)
     }
 
     render() {
@@ -31,7 +37,7 @@ export class Home extends React.Component {
 
         return <section className="home-main-container">
             <AppHeader page={this.state.page} />
-            <PostList posts={this.state.posts} userLogged={this.state.userLogged} onRemove={this.removePost} />
+            <PostList posts={this.state.posts} userLogged={this.state.userLogged} onRemove={this.onRemovePost} />
             {/* <UserList users={this.state.users} /> */}
         </section>
 

@@ -75,8 +75,8 @@ export class PostPreview extends React.Component {
     render() {
 
         return (<div className="post-preview-main-container">
-            <UserPreview user={this.state.post.by} />
-            <button onClick={() => this.props.onRemove(this.state.post._id)}></button>
+            <UserPreview user={this.state.post.by} post={this.state.post} onRemove={this.props.onRemove}/>
+            {/* <button onClick={() => this.props.onRemove(this.state.post._id)}></button> */}
             <Link to={`/post/${this.state.post._id}`}>
                 <img src={this.state.post.imgUrl} alt="Image not available" className="post-img"></img>
             </Link>
